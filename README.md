@@ -1,8 +1,6 @@
 # Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL, 2023
 
-
 This is a repository for a Full Stack E-Commerce + Dashboard & CMS: Next.js 13 App Router, React, Tailwind, Prisma, MySQL
-
 
 Key Features:
 
@@ -42,11 +40,9 @@ npm i
 
 ### Setup .env file
 
-
 ```js
 NEXT_PUBLIC_API_URL=
 ```
-
 
 ### Start the app
 
@@ -58,6 +54,6 @@ npm run dev
 
 Running commands with npm `npm run [command]`
 
-| command         | description                              |
-| :-------------- | :--------------------------------------- |
-| `dev`           | Starts a development instance of the app |
+| command | description                              |
+| :------ | :--------------------------------------- |
+| `dev`   | Starts a development instance of the app |

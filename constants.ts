@@ -7,30 +7,30 @@ export const lists = [
         price: 10.99,
         rating: 5.0,
         ratingCount: 70,
-        image: '/image.png'
+        image: '/image.png',
       },
       {
         title: 'Wool Cashmere Jacket',
         price: 180,
         rating: 4.7,
         ratingCount: 23,
-        image: '/coat.png'
+        image: '/coat.png',
       },
       {
         title: 'Travel Pet Carrier',
         price: 42,
         rating: 4.5,
         ratingCount: 50,
-        image: '/bag.png'
+        image: '/bag.png',
       },
       {
         title: 'Clem Cashmere Scarf',
         price: 65,
         rating: 4.9,
         ratingCount: 46,
-        image: '/scarf.png'
-      }
-    ]
+        image: '/scarf.png',
+      },
+    ],
   },
   {
     title: 'New Arrivals',
@@ -40,36 +40,36 @@ export const lists = [
         price: 180,
         rating: 4.7,
         ratingCount: 23,
-        image: '/coat.png'
+        image: '/coat.png',
       },
       {
         title: 'Acetate Sunglasses',
         price: 10.99,
         rating: 5.0,
         ratingCount: 70,
-        image: '/image.png'
+        image: '/image.png',
       },
       {
         title: 'Clem Cashmere Scarf',
         price: 65,
         rating: 4.9,
         ratingCount: 46,
-        image: '/scarf.png'
+        image: '/scarf.png',
       },
       {
         title: 'Travel Pet Carrier',
         price: 42,
         rating: 4.5,
         ratingCount: 50,
-        image: '/bag.png'
+        image: '/bag.png',
       },
-    ]
-  }
+    ],
+  },
 ];
 
 export const product = {
   name: 'Zip Tote Basket',
-  price: 140.00,
+  price: 140.0,
   rating: 4,
   images: [
     {
@@ -110,7 +110,7 @@ export const product = {
     },
     // More sections...
   ],
-}
+};
 
 export const reviews = {
   average: 4,
@@ -145,7 +145,7 @@ export const reviews = {
     },
     // More reviews...
   ],
-}
+};
 
 export const filters = [
   {
@@ -172,4 +172,4 @@ export const filters = [
       { value: '2xl', label: '2XL' },
     ],
   },
-]
+];
