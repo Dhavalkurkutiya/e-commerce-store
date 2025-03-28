@@ -8,10 +8,13 @@ import { Category } from '@/types';
 
 const Navbar = async () => {
   let categories: Category[] = [];
+  let error = null;
+
   try {
     categories = await getCategories();
-  } catch (error) {
-    console.error('Failed to fetch categories:', error);
+  } catch (err) {
+    error = err;
+    console.error('Failed to fetch categories:', err);
   }
 
   return (
@@ -26,7 +29,18 @@ const Navbar = async () => {
               STORE
             </p>
           </Link>
-          <MainNav data={categories} />
+          {!error && categories.length > 0 ? (
+            <MainNav data={categories} />
+          ) : (
+            <div className="mx-6 flex items-center space-x-4 lg:space-x-6">
+              <Link
+                href="/"
+                className="text-sm font-medium transition-colors hover:text-black text-neutral-500"
+              >
+                Home
+              </Link>
+            </div>
+          )}
           <NavbarActions />
         </div>
       </Container>
