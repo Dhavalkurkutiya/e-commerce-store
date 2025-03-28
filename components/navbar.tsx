@@ -4,9 +4,15 @@ import MainNav from '@/components/main-nav';
 import Container from '@/components/ui/container';
 import NavbarActions from '@/components/navbar-actions';
 import getCategories from '@/actions/get-categories';
+import { Category } from '@/types';
 
 const Navbar = async () => {
-  const categories = await getCategories();
+  let categories: Category[] = [];
+  try {
+    categories = await getCategories();
+  } catch (error) {
+    console.error('Failed to fetch categories:', error);
+  }
 
   return (
     <div className="sticky top-0 z-50 w-full border-b bg-white/80 backdrop-blur-sm shadow-sm">
